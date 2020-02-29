@@ -14,6 +14,10 @@ on:
   push:
     branches:
       - master
+ git clone https://github.com/Lienol/openwrt-package package/openwrt-package
+  ./scripts/feeds update -a
+  ./scripts/feeds install -a
+
     paths:
       - '.config'
 #  schedule:
